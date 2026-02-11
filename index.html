@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+</head>
+<link rel="stylesheet" href="sstyle.css">
+<body>
+        <div class="form-container">
+        <h4>COACH ABDUL'S FORMS</h4>
+
+        <form onsubmit="redirectToWhatsApp(); return false;">
+
+            <label>First Name:</label><br>
+            <input type="text" name="firstname" placeholder="Abdul-Aziz" required>
+            <br><br>
+
+            <label>Last Name:</label><br>
+            <input type="text" name="lastname" placeholder="Alhassan" required>
+            <br><br>
+
+            <label>Email:</label><br>
+            <input type="email" name="email" placeholder="alhassanabdulaziz@330.com" required>
+            <br><br>
+
+            <label>Date Of Birth:</label><br>
+            <input type="date" name="date" required>
+            <br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="Male" required> Male
+            <input type="radio" name="gender" value="Female" required> Female
+            <br><br>
+
+            <label>Number:</label><br>
+            <input type="number" name="number" placeholder="233********" required>
+            <br><br>
+
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+
+        </form>
+        </div>
+
+        <script>
+          function redirectToWhatsApp() {
+            alert("Form submitted successfully! Redirecting you to WhatsApp...");
+            window.location.href =
+              "https://chat.whatsapp.com/JqVw7r6Qrex6nyx3LvfULS?mode=gi_t";
+          }
+        </script>
+
+    </body>
+</html>
